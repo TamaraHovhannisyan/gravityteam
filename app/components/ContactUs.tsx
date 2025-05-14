@@ -1,19 +1,21 @@
-import React from 'react'
+import React from "react";
+import Button from "./Button";
 
 const ContactUs = () => {
   return (
-    <div className='flex flex-col items-center gap-5 mt-30 mb-30 '>
-      <h2 className='text-4xl'>Contact Us</h2>
-      <p>
-        We are always open to discuss new value-adding partnerships. Do reach <br />
-        out if you are an exchange or a project looking for liquidity; an
-        algorithmic <br />trader or a software developer looking to improve the
-        markets with us or <br />just have a great idea you can’t wait to share with
-        us!
-      </p>
-      <button className="border-2 h-15 w-40">GET IN TOUCH</button>
-    </div>
-  );
-}
+    <section className="flex flex-col items-center px-4 py-20 gap-8 bg-black text-white text-center">
+      <h2 className="text-4xl font-bold">Contact Us</h2>
 
-export default ContactUs
+      <p className="max-w-2xl text-base text-gray-300 leading-relaxed">
+        We are always open to discuss new value-adding partnerships. Do reach
+        out if you are an exchange or a project looking for liquidity; an
+        algorithmic trader or a software developer looking to improve the
+        markets with us — or just have a great idea you can’t wait to share!
+      </p>
+
+      <Button/>
+    </section>
+  );
+};
+
+export default ContactUs;

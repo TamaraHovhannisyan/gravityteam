@@ -3,67 +3,85 @@ import React from "react";
 
 const CryptoMarket = () => {
   return (
-    <div className="flex flex-col items-center mt-30 gap-10">
-      <h3 className="text-4xl font-bold">Crypto Market Making</h3>
-      <p className="mb-10">
-        We are a global crypto liquidity provider and algorithmic market <br />{" "}
-        maker. We trade digital assets listed on Centralized Exchanges in <br />{" "}
-        over 15 countries worldwide.
+    <section className="flex flex-col items-center mt-12 gap-10 px-4">
+      <h3 className="text-4xl font-bold text-white text-center">
+        Crypto Market Making
+      </h3>
+
+      <p className="max-w-3xl text-center text-gray-400 mb-10 leading-relaxed">
+        We are a global crypto liquidity provider and algorithmic market maker.
+        We trade digital assets listed on centralized exchanges in over 15
+        countries worldwide.
       </p>
-      <div className="flex gap-30 ">
-        <div className="flex flex-col gap-4">
-          <h2 className="text-2xl ">
+
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-between w-full max-w-6xl gap-10 md:gap-20">
+        <div className="flex flex-col gap-4 flex-1">
+          <h4 className="text-2xl font-semibold text-white">
             Market Making for <br /> Crypto Projects
-          </h2>
-          <p>
-            Accelerate your token’s journey by <br /> boosting its liquidity
+          </h4>
+          <p className="text-gray-400">
+            Accelerate your token’s journey by boosting its liquidity.
           </p>
-          <p>
-            We invest in building long-term,
-            <br /> sustainable relationships and support our <br /> projects in
-            their growth journey with our <br /> services, industry expertise
-            and network.
+          <p className="text-gray-400">
+            We invest in building long-term, sustainable relationships and
+            support our projects in their growth journey with our services,
+            industry expertise, and network.
           </p>
-          <button>Learn more</button>
+          <a
+            href="#"
+            className="self-start text-white font-medium underline underline-offset-4"
+          >
+            Learn more
+          </a>
         </div>
-        <Image
-          src="/utiles/div2.png"
-          alt="img"
-          width={340}
-          height={300}
-          priority
-          className="object-contain"
-        />
+
+        <div className="flex-1">
+          <Image
+            src="/utiles/div2.png"
+            alt="Crypto project example"
+            width={500}
+            height={300}
+            className="object-contain w-full"
+            priority
+          />
+        </div>
       </div>
-      <div className="flex items-center gap-30">
-        <div>
+
+      <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full max-w-6xl">
+        <div className="flex-1 w-full">
           <Image
             src="/utiles/exchange-screens-new.png"
             alt="img"
-            width={340}
+            width={500}
             height={300}
+            className="object-contain w-full"
             priority
-            className="object-contain"
           />
         </div>
 
-        <div className="flex flex-col gap-4">
-          <h3 className="text-2xl">
+        <div className="flex flex-col gap-4 flex-1">
+          <h3 className="text-2xl font-semibold text-white">
             Market Making for <br /> Crypto Exchanges
           </h3>
-          <h4>
-            Attract more traders and projects with <br /> deep order books &
-            liquidity
+          <h4 className="text-white">
+            Attract more traders and projects with deep order books & liquidity
           </h4>
-          <p>
-            Our world-class market making services are <br /> proven to help
-            local and emerging exchanges <br /> win traders and gain
-            market-leading positions <br /> of up to 90% market dominance.
+          <p className="text-gray-400">
+            Our world-class market making services are proven to help local and
+            emerging exchanges win traders and gain market-leading positions of
+            up to 90% market dominance.
           </p>
-          <button>Learn more</button>
+          <div>
+            <a
+              href="#"
+              className="self-start text-white font-medium underline underline-offset-4"
+            >
+              Learn more
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

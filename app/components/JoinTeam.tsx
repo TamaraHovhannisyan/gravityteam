@@ -1,30 +1,37 @@
-import React from 'react'
+import React from "react";
 
 const JoinTeam = () => {
   return (
-    <div className=" flex justify-center mt-30">
-      <div className="flex items-center gap-40">
-        <h2 className='text-4xl'>
+    <section className="flex justify-center px-4 py-20 bg-black text-white">
+      <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl w-full">
+        <h2 className="text-4xl font-bold text-center lg:text-left">
           Join <br /> Gravity Team
         </h2>
-        <div className="flex flex-col gap-4">
-          <p>
-            Join our community of innovators, problem solvers and <br />
-            owners who apply scientific discovery techniques to <br />
-            make crypto markets a better place for everyone.
+
+        <div className="flex flex-col gap-6 max-w-2xl">
+          <p className="text-gray-300 leading-relaxed text-base">
+            Join our community of innovators, problem solvers and owners who
+            apply scientific discovery techniques to make crypto markets a
+            better place for everyone.
           </p>
-          <p>
-            As we emphasize it in our name – Gravity Team, we are <br />
-            a team. A team of bright, talented people, each masters <br />
-            of their specialty, curious about the world and eager to <br />
-            solve the new exciting cryptocurrency market problems, <br />
-            build cool stuff and have fun whilst doing so!
+          <p className="text-gray-300 leading-relaxed text-base">
+            As we emphasize it in our name – Gravity Team – we are a team. A
+            team of bright, talented people, each a master of their specialty,
+            curious about the world and eager to solve new, exciting
+            cryptocurrency market problems, build cool stuff and have fun whilst
+            doing so!
           </p>
-          <button>Learn more about working with us</button>
+
+          <a
+            href="#"
+            className="self-start text-white font-medium underline underline-offset-4"
+          >
+            Learn more about working with us
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
-export default JoinTeam
+export default JoinTeam;
